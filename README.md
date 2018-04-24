@@ -27,7 +27,7 @@ While developing, you will probably rely mostly on `yarn start`; however, there 
 |`dev`              |Serves your app at `localhost:3000` and api at `localhost:3001`|
 |`start`            |Serves your app at `localhost:3000`|
 |`build`            |Builds the application to ./dist|
-|`server`           |Serve api at `localhost:3001`|
+|`server`           |Serves api at `localhost:3001`|
 |`test`             |Runs unit tests with Karma. See [testing](#testing)|
 |`test:watch`       |Runs `test` in watch mode to re-run tests when changed|
 |`lint`             |[Lints](http://stackoverflow.com/questions/8503559/what-is-linting) the project for potential errors|

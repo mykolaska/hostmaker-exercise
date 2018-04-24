@@ -2,10 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Layout, Row, Col, message } from 'antd'
 import OwnerTable  from '../OwnerTable'
+import OwnerGoogleMap from '../OwnerGoogleMap'
 
 import './index.css'
 
 const { Header, Content } = Layout
+
+const GOOGLE_MAP_API_KEY = 'AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg'
 
 class Owner extends React.Component {
   static propTypes = {
@@ -39,7 +42,12 @@ class Owner extends React.Component {
               <OwnerTable owners={owners} ownersLoading={ownersLoading} />
             </Col>
             <Col md={8}>
-              Map
+              <OwnerGoogleMap
+                owners={owners}
+                googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_API_KEY}&v=3.exp&libraries=geometry,drawing,places`}
+                loadingElement={<div style={{ height: `100%` }} />}
+                containerElement={<div style={{ height: `500px`, margin: '0 20px' }} />}
+                mapElement={<div style={{ height: `100%` }} />} />
             </Col>
           </Row>
         </Content>
