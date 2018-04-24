@@ -1,0 +1,18 @@
+.onwer-page {
+  padding: 50px 20px 20px;
+  background: white !important;
+}
+
+.onwer-page .onwer-page__header {
+  background: white;
+  text-align: center;
+}
+
+.onwer-page .onwer-page__header .page-title {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.onwer-page .onwer-page__content {
+  padding: 20px;
+}
