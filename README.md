@@ -17,15 +17,17 @@ $ yarn  # Install project dependencies (or `npm install`)
 After completing the [installation](#installation) step, you're ready to start the project!
 
 ```bash
-$ yarn start  # Start the development server (or `npm start`)
+$ yarn dev  # Start the development server (or `npm run dev`)
 ```
 
 While developing, you will probably rely mostly on `yarn start`; however, there are additional scripts at your disposal:
 
 |`yarn <script>`    |Description|
 |-------------------|-----------|
+|`dev`              |Serves your app at `localhost:3000` and api at `localhost:3001`|
 |`start`            |Serves your app at `localhost:3000`|
 |`build`            |Builds the application to ./dist|
+|`server`           |Serve api at `localhost:3001`|
 |`test`             |Runs unit tests with Karma. See [testing](#testing)|
 |`test:watch`       |Runs `test` in watch mode to re-run tests when changed|
 |`lint`             |[Lints](http://stackoverflow.com/questions/8503559/what-is-linting) the project for potential errors|
