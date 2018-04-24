@@ -1,0 +1,13 @@
+.info-item {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.info-item .info-item__title {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.info-item .info-item__value {
+  padding: 0 5px;
+}
